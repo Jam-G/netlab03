@@ -1,0 +1,8 @@
+本文件夹下的文件为程序源码,包括三个文件夹:client common server
+其中client为客户端源码,server为服务器源码,common为客户端和服务器共用的协议的结构定义和说明
+./client 包含了客户端源码,其中Makefile用于编译客户端程序,make成功后 生成名为client的文件
+	运行在其目录下./client即可,会提示输入服务器ip,然后输入服务器ip即可连接服务器,之后根据提示操作即可
+./server 包含了服务器源码,其中Makefile用于编译服务器程序,make成功后 生成名为server的文件
+	运行在其目录下./server即可.会随着通信过程输出很多debug信息.方便观察服务器行为
+./common 其中common.h文件定义了客户端和服务器使用的协议的数据结构
+		protocol.txt为协议的说明文件,说明协议的工作过程,虽然这些在实验报告中也有
